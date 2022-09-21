@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#07D6D6"
+    tools:context=".successful_Order">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="131dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="156dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ordersuccessfulimage" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="371dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text=" CONGRATULATION !"
+        android:textColor="#171515"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="371dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="48dp"
+        android:gravity="center"
+        android:text="Your Order has been palced"
+        android:textColor="#171515"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/nameBox2"-->
+    <!--        android:layout_width="370dp"-->
+    <!--        android:layout_height="45dp"-->
+    <!--        android:background="@drawable/backgroundaddview"-->
+    <!--        android:ems="10"-->
+    <!--        android:hint="YOUR NAME"-->
+    <!--        android:inputType="textPersonName"-->
+    <!--        android:minHeight="25dp"-->
+    <!--        android:padding="10dp"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.512"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/textView11" />-->
+
+    <android.support.constraint.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left"
+        app:constraint_referenced_ids="nameBox2" />
+</android.support.constraint.ConstraintLayout>
